@@ -118,7 +118,24 @@ func doWorkAsync(block: @escaping ()->()) {
 //    return variable + 1
 //}
 // 没有修饰符的，默认为let
-func incrementor(variable: var Int) -> Int{
-    variable += 1
+func incrementor(variable: Int) -> Int{
     return variable
 }
+
+// _ in function parameter
+//func addElement(ball target: String){
+//    print(target)
+//}
+//
+//addElement(ball: "lil ball")
+
+// so its like: variableName type: RealType
+// you can do this, _ type: RealType
+// why ???
+func addElement(ball: String){
+    print(ball)
+}
+
+addElement(ball: "lil")
+
+
